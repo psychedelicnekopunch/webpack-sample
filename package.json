@@ -1,0 +1,24 @@
+{
+  "name": "webpack-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psychedelicnekopunch/webpack-sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psychedelicnekopunch/webpack-sample/issues"
+  },
+  "homepage": "https://github.com/psychedelicnekopunch/webpack-sample#readme",
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
