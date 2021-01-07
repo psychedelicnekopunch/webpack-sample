@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack"
+    "webpack": "webpack",
+	"wp-prod": "webpack --mode=production",
+	"wp-dev": "webpack --mode=development"
   },
   "repository": {
     "type": "git",
