@@ -3,6 +3,7 @@
 
 ```bash
 $ npm install
+$ npm install mini-css-extract-plugin --save-dev
 ```
 
 
