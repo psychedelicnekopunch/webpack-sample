@@ -1,0 +1,130 @@
+/**
+ * Global Variable
+ *
+ */
+
+/******
+Gray: Blue
+******/
+$color-gray-100: #fff;
+$color-gray-90: #f7f8f9;
+$color-gray-80: #e9ecf2;
+$color-gray-70: #eee;
+$color-gray-60: #d2d8dd;
+$color-gray-50: #ccc;
+$color-gray-40: #aaa;
+$color-gray-30: #789;
+$color-gray-20: #5a6066;
+$color-gray-10: #444;
+$color-gray-0: #012;
+
+
+/******
+Font Size
+******/
+$font-xlarge  : 36px;
+$font-large   : 24px;
+$font-default : 18px;
+$font-small   : 16px;
+$font-xsmall  : 13px;
+
+$font-xlarge-app  : 26px;
+$font-large-app   : 18px;
+$font-default-app : 14px;
+$font-small-app   : 12px;
+$font-xsmall-app  : 11px;
+
+
+
+
+
+/**
+ * _color.scss
+ *
+ */
+$color-white           : $color-gray-100;
+$color-superlight-gray : $color-gray-90;
+$color-light-gray      : $color-gray-80;
+$color-gray            : $color-gray-60;
+$color-dark-gray       : $color-gray-30;
+$color-superdark-gray  : $color-gray-10;
+$color-black           : $color-gray-0;
+
+
+$color-light-red: #f9b;
+$color-red: #f79;
+
+$color-light-green: #9ca;
+$color-green: #7a8;
+
+$color-light-blue: #9ac;
+$color-blue: #78a;
+
+$color-light-purple: #b9b;
+$color-purple: #979;
+
+$color-light-orange: #ea7;
+$color-orange: #d85;
+
+
+
+
+
+/**
+ * _spacing.scss
+ *
+ */
+/******
+Padding
+******/
+$padding-xsmall: 2px;
+$padding-small: 8px;
+$padding-medium: 12px;
+$padding-large: 24px;
+$padding-xlarge: 48px;
+
+
+/******
+Margin
+******/
+$margin-xsmall: 2px;
+$margin-small: 8px;
+$margin-medium: 12px;
+$margin-large: 24px;
+$margin-xlarge: 48px;
+
+
+
+
+/**
+ * _text.scss
+ *
+ */
+
+// _font-size.scss
+$text-font-xlarge  : $font-xlarge;
+$text-font-large   : $font-large;
+$text-font-default : $font-default;
+$text-font-small   : $font-small;
+$text-font-xsmall  : $font-xsmall;
+
+$text-font-xlarge-app  : $font-xlarge-app;
+$text-font-large-app   : $font-large-app;
+$text-font-default-app : $font-default-app;
+$text-font-small-app   : $font-small-app;
+$text-font-xsmall-app  : $font-xsmall-app;
+
+$line-height: 150%;
+
+
+
+
+
+/**
+ * includes
+ *
+ */
+
+// _media-query.scss
+$desktop: 550px;
+$tablet: 360px;

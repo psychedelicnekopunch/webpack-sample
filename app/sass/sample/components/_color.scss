@@ -1,0 +1,84 @@
+
+$colors: (
+	// gray
+	"white": $color-white,
+	"superlight-gray": $color-superlight-gray,
+	"light-gray": $color-light-gray,
+	"gray": $color-gray,
+	"dark-gray": $color-dark-gray,
+	"superdark-gray": $color-superdark-gray,
+	"black": $color-black,
+	// color
+	"red": $color-red,
+	"light-red": $color-light-red,
+	"green": $color-green,
+	"light-green": $color-light-green,
+	"blue": $color-blue,
+	"light-blue": $color-light-blue,
+	"purple": $color-purple,
+	"light-purple": $color-light-purple,
+	"orange": $color-orange,
+	"light-orange": $color-light-orange,
+);
+
+
+@mixin color($default, $action) {
+	.color-#{$default} {
+		color: map-get($colors, $default);
+	}
+	.bg-#{$default} {
+		background: map-get($colors, $default);
+	}
+	a.color-#{$default} {
+		color: map-get($colors, $default);
+		&:hover, &:active {
+			color: map-get($colors, $action);
+		}
+	}
+	a.bg-#{$default} {
+		background: map-get($colors, $default);
+		&:hover, &:active {
+			background: map-get($colors, $action);
+		}
+	}
+	.color-#{$default}-link {
+		a {
+			color: map-get($colors, $default);
+			&:hover, &:active {
+				color: map-get($colors, $action);
+			}
+		}
+	}
+	.bg-#{$default}-link {
+		a {
+			background: map-get($colors, $default);
+			&:hover, &:active {
+				background: map-get($colors, $action);
+			}
+		}
+	}
+}
+
+
+@include color("white",           "superlight-gray");
+@include color("superlight-gray", "white");
+@include color("light-gray",      "superlight-gray");
+@include color("gray",            "light-gray");
+@include color("dark-gray",       "gray");
+@include color("superdark-gray",  "dark-gray");
+@include color("black",           "superdark-gray");
+
+@include color("red", "light-red");
+@include color("light-red", "red");
+
+@include color("green", "light-green");
+@include color("light-green", "green");
+
+@include color("blue", "light-blue");
+@include color("light-blue", "blue");
+
+@include color("purple", "light-purple");
+@include color("light-purple", "purple");
+
+@include color("orange", "light-orange");
+@include color("light-orange", "orange");

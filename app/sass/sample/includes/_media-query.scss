@@ -1,0 +1,42 @@
+/**
+ * [usage: example]
+ *
+ * @include mobile {
+ *     // some: css;
+ * }
+ */
+
+@mixin max-screen($break-point) {
+	@media screen and (max-width: $break-point - 1) {
+		@content;
+	}
+}
+
+@mixin min-screen($break-point) {
+	@media screen and (min-width: $break-point) {
+		@content;
+	}
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+	@media screen and (min-width: $break-point-min) and (max-width: $break-point-max - 1) {
+		@content;
+	}
+}
+@mixin mobile {
+	@media screen and (max-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: $desktop) {
+		@content;
+	}
+}

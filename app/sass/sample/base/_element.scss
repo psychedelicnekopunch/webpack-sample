@@ -1,0 +1,32 @@
+input[type=radio],
+input[type=checkbox],
+
+body, html {
+	letter-spacing: 0.05em;
+}
+
+a {
+	cursor: pointer;
+}
+
+button {
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+	vertical-align: top;
+	line-height: 0;
+}
+
+select,
+textarea,
+button {
+	&:focus {
+		outline: none;
+	}
+}

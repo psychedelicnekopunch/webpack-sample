@@ -1,0 +1,101 @@
+/**
+ * Headline
+ */
+
+.headline1,
+.headline2,
+.headline3,
+.headline4 {
+	background: none;
+	font-weight: normal;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.headline1 {
+	@extend .font-xlarge;
+	color: $color-black;
+	margin-bottom: $margin-large;
+}
+
+.headline2 {
+	background: $color-gray;
+	color: $color-dark-gray;
+	padding: $padding-medium;
+	margin-bottom: $margin-large;
+}
+
+.headline3 {
+	color: $color-dark-gray;
+	border-bottom: 1px $color-gray solid;
+	padding: $padding-xsmall;
+	margin-bottom: $margin-medium;
+}
+
+.headline4 {
+	color: $color-dark-gray;
+	border-bottom: 1px $color-gray solid;
+	padding: $padding-xsmall;
+	margin-bottom: $margin-medium;
+}
+
+
+/**
+ * Font Size
+ * [usage: example]
+ *
+ * h1 {
+ *    @extend .font-default;
+ *    color: #f44;
+ * }
+ */
+
+.font-xlarge {
+	font-size: $text-font-xlarge;
+	line-height: $line-height;
+	@include mobile {
+		font-size: $text-font-xlarge-app;
+	}
+}
+
+.font-large {
+	font-size: $text-font-large;
+	line-height: $line-height;
+	@include mobile {
+		font-size: $text-font-large-app;
+	}
+}
+
+.font-default {
+	font-size: $text-font-default;
+	line-height: $line-height;
+	@include mobile {
+		font-size: $text-font-default-app;
+	}
+}
+
+.font-small {
+	font-size: $text-font-small;
+	line-height: $line-height;
+	@include mobile {
+		font-size: $text-font-small-app;
+	}
+}
+
+.font-xsmall {
+	font-size: $text-font-xsmall;
+	line-height: $line-height;
+	@include mobile {
+		font-size: $text-font-xsmall-app;
+	}
+}
+
+
+/**
+ * Paragraph
+ */
+
+p {
+	margin: 15px 0;
+}

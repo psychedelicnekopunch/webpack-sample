@@ -1,0 +1,46 @@
+/**
+ * Padding
+ *
+ */
+$paddings: "padding", "padding-top", "padding-left", "padding-bottom", "padding-right";
+$padding-sizes: (
+	"xsmall": $padding-xsmall,
+	"small": $padding-small,
+	"medium": $padding-medium,
+	"large": $padding-large,
+	"xlarge": $padding-xlarge,
+);
+
+@each $padding in $paddings {
+	.#{$padding} {
+		@each $key, $value in $padding-sizes {
+			&-#{$key} {
+				#{$padding}: $value;
+			}
+		}
+	}
+}
+
+
+/**
+ * Margin
+ *
+ */
+$margins: "margin", "margin-top", "margin-left", "margin-bottom", "margin-right";
+$margin-sizes: (
+	"xsmall": $margin-xsmall,
+	"small": $margin-small,
+	"medium": $margin-medium,
+	"large": $margin-large,
+	"xlarge": $margin-xlarge,
+);
+
+@each $margin in $margins {
+	.#{$margin} {
+		@each $key, $value in $margin-sizes {
+			&-#{$key} {
+				#{$margin}: $value;
+			}
+		}
+	}
+}
