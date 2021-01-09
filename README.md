@@ -6,8 +6,15 @@ $ npm install
 ```
 
 
+## Develop and Watch
+
+```bash
+$ npm run dev
+```
+
+
 ## Build
 
 ```bash
-$ npm run webpack
+$ npm run build
 ```
