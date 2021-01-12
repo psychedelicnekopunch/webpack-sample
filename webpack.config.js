@@ -80,15 +80,16 @@ module.exports = {
 					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
-						options: { url: false },
+						options: {
+							url: false,
+						},
 					},
-					'sass-loader',
+					{
+						loader: 'sass-loader',
+						options: {},
+					},
 				],
 			},
-			// {
-			// 	test: /\.(png|svg|jpg|jpeg|gif)$/i,
-			// 	type: 'assets/images',
-			// },
 		],
 	},
 	plugins: [
