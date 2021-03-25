@@ -4,7 +4,7 @@
 module.exports = {
 	entry: './app/main.js',
 	output: {
-		filename: 'script.js',
+		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'public/js'),
 	},
 }*/
@@ -15,7 +15,7 @@ const path = require('path')
 module.exports = {
 	entry: './app/main.js',
 	output: {
-		filename: 'script.js',
+		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'public/js'),
 	},
 	// https://webpack.js.org/plugins/ignore-plugin/
@@ -34,7 +34,7 @@ module.exports = {
 	entry: './app/main.js',
 	output: {
 		path: path.resolve(__dirname, 'public'),
-		filename: 'js/script.js',
+		filename: 'js/bundle.js',
 	},
 	module: {
 		rules: [
@@ -69,7 +69,7 @@ module.exports = {
 	entry: './app/main.js',
 	output: {
 		path: path.resolve(__dirname, 'public'),
-		filename: 'js/script.js',
+		filename: 'js/bundle.js',
 	},
 	module: {
 		rules: [
@@ -98,7 +98,7 @@ module.exports = {
 			contextRegExp: /moment$/,
 		}),
 		new MiniCssExtractPlugin({
-			filename: 'css/style.css',
+			filename: 'css/bundle.css',
 		}),
 	],
 }

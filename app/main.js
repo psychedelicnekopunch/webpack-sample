@@ -6,3 +6,5 @@ const sample = new Sample
 
 console.log(sample.getUnix())
 console.log('success')
+
+window.sample = sample
