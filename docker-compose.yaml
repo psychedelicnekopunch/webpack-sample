@@ -6,7 +6,7 @@ services:
         build:
             context: .
         volumes:
-            - ./public:/var/www/html
+            - ./app/public:/var/www/html
             - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
         ports:
             - "8080:80"
@@ -15,4 +15,4 @@ services:
     php:
         image: php:fpm
         volumes:
-            - ./public:/var/www/html
+            - ./app/public:/var/www/html
